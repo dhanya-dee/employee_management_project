@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { EmployeeCardsGridModule } from './employee-cards-grid.module';
 import { EmployeeService } from '../../services/employee.service';
 import { ListOfEmployee } from '../../services/employee';
@@ -12,7 +12,10 @@ import { NgForOf } from '@angular/common';
 })
 export class EmployeeCardsGridComponent implements OnInit {
   empObject: ListOfEmployee[] = [];
+  @Input() typeOfModal!:number;
+  @Input() title!: string;
   @Output() totalRecords = new EventEmitter<number>();
+
   constructor(private apiService: EmployeeService) { }
 
   ngOnInit(): void {

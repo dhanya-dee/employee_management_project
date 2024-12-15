@@ -1,23 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import { NgClass, NgIf } from '@angular/common';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-side-nav',
-  imports: [],
+  imports: [NgIf, NgClass],
   templateUrl: './side-nav.component.html',
   styleUrl: './side-nav.component.css'
 })
 export class SideNavComponent implements OnInit{
+  @ViewChild('mySearchnav') mySearchnav!: ElementRef;
+
   searchIcon = false;
 
   ngOnInit(): void {
   }
 
   openSearchNav() {
-    // .getElementById("mySearchnav").style.width = "450px";
+    this.mySearchnav.nativeElement.style.width = "200px";
+    this.mySearchnav.nativeElement.style.marginLeft = "222px";
+    this.mySearchnav.nativeElement.style.zIndex = "1";
     this.searchIcon = true;
   }
   
   closeSearchNav() {
-    // document.getElementById("mySearchnav").style.width = "0";
+    this.mySearchnav.nativeElement.style.width = "200px";
+    this.mySearchnav.nativeElement.style.marginLeft = "0px";
+    this.mySearchnav.nativeElement.style.zIndex = "0";
+    this.searchIcon = false;
   }
 }

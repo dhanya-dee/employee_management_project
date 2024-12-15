@@ -3,7 +3,7 @@
 }
 
 .employee-view-display {
-  margin: 0px -5px;
+  margin: 0rem -0.3125rem;
   flex-wrap: no-wrap;
   content: "";
   display: flex;
@@ -12,21 +12,21 @@
 
 .employee-card-view {
   display: block;
-  padding: 5px 10px;
+  padding: .3125rem .625rem;
 }
 
 .employee-card {
-  border: 1px solid #cccccc;;
-  border-radius: 2px;
-  margin: 5px;
+  border: .0625rem solid #cccccc;;
+  border-radius: .125rem;
+  margin: .3125rem;
   width: 24%;
-  height: 280px;
-  padding: 5px;
+  height: 17.5rem;
+  padding: .3125rem;
   text-align: left;
   background-color: #ffffff;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0rem) {
   .employee-view-display {
     flex-wrap: wrap;
   }
@@ -35,7 +35,7 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 62rem) {
   .employee-view-display {
     flex-wrap: wrap;
   }
@@ -44,7 +44,7 @@
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 125rem) {
   .employee-view-display {
     flex-wrap: wrap;
   }

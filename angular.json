@@ -14,8 +14,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/employee-management",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
+            "index": "./index.html",
+            "browser": "./main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -27,13 +27,13 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "./styles.css"
             ],
             "scripts": [],
-            "server": "src/main.server.ts",
+            "server": "./main.server.ts",
             "outputMode": "server",
             "ssr": {
-              "entry": "src/server.ts"
+              "entry": "./server.ts"
             }
           },
           "configurations": {
@@ -90,7 +90,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "./styles.css"
             ],
             "scripts": []
           }

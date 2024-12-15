@@ -6,7 +6,10 @@ import { RouterOutlet } from '@angular/router';
 import { PaginationComponent } from '../pagination/pagination.component';
 import { CommonModule } from '@angular/common';
 import { EmployeeCardsGridComponent } from '../employee-cards-grid/employee-cards-grid.component';
-import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AddEditEmployeeComponent } from '../add-edit-employee/add-edit-employee.component';
+import { ViewDeleteEmployeeCardModule } from '../view-delete-employee-card/view-delete=employee-card.module';
+import { EmployeeCardsGridModule } from '../employee-cards-grid/employee-cards-grid.module';
 
 @NgModule({
   exports: [
@@ -14,6 +17,7 @@ import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http'
     HeaderComponent,
     SideNavComponent,
     PaginationComponent,
+    AddEditEmployeeComponent,
     EmployeeCardsGridComponent,
   ],
   imports: [
@@ -22,12 +26,13 @@ import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http'
     HeaderComponent,
     PaginationComponent,
     EmployeeCardsGridComponent,
+    AddEditEmployeeComponent,
     CommonModule,
     RouterOutlet,
-    HttpClientModule
+    ReactiveFormsModule,
+    EmployeeCardsGridModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
