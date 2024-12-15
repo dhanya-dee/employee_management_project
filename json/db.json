@@ -1,0 +1,66 @@
+{
+    "currentEmployee": [
+        {
+            "id": 1,
+            "icon": 2,
+            "name": "Dhanya",
+            "designation": "Senior Software Developer",
+            "companyName": "Infrrd",
+            "currentTeam": "Digital Products",
+            "emailId": "dhvnair@gmail.com",
+            "contact": 9900990098
+        }
+    ],
+    "displayEmployees": [
+        {
+            "id": 1,
+            "icon": 2,
+            "name": "Dhanya",
+            "designation": "Senior Software Developer",
+            "companyName": "Infrrd",
+            "currentTeam": "Digital Products",
+            "emailId": "dhvnair@gmail.com",
+            "contact": 9900990098
+        },
+        {
+            "id": 2,
+            "icon": 1,
+            "name": "Drew",
+            "designation": "Manager",
+            "companyName": "Infrrd",
+            "currentTeam": "Business Delivery",
+            "emailId": "drew@gmail.com",
+            "contact": 5600880078
+        },
+        {
+            "id": 3,
+            "icon": 0,
+            "name": "Alice",
+            "designation": "Technical Lead",
+            "companyName": "Infrrd",
+            "currentTeam": "Cloud Infra",
+            "emailId": "alice@gmail.com",
+            "contact": 2200880078
+        },
+        {
+            "id": 4,
+            "icon": 3,
+            "name": "Karthik",
+            "designation": "Quality Assurance",
+            "companyName": "Infrrd",
+            "currentTeam": "Calibrations",
+            "emailId": "karthik@gmail.com",
+            "contact": 8555880078
+        },
+        {
+            "id": 5,
+            "icon": 2,
+            "name": "Riya",
+            "designation": "Software Developer",
+            "companyName": "Infrrd",
+            "currentTeam": "Emerging Technology",
+            "emailId": "riya@gmail.com",
+            "contact": 3360880078
+        }
+    ]
+}

@@ -1,7 +1,17 @@
 .header{
   width: 100%;
   height: 4.2rem;
-  position: sticky ;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   background-color: #fff;
   border-bottom: 1px solid #f5f5f5;
+}
+.bell-icon{
+  margin-right: 12px;
+}
+
+.team-icon{
+  margin-right:8px;
 }
