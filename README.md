@@ -6,6 +6,10 @@ Every employee hired to the company's files can be edited,viewed and deleted. Re
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.5.
 
+#UI Interface:
+![Uploading image.png…]()
+
+
 ## Development server
 
 To start a local development server, run:
