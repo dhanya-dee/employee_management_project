@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-side-nav',
@@ -6,9 +6,15 @@ import { Component } from '@angular/core';
   templateUrl: './side-nav.component.html',
   styleUrl: './side-nav.component.css'
 })
-export class SideNavComponent {
+export class SideNavComponent implements OnInit{
+  searchIcon = false;
+
+  ngOnInit(): void {
+  }
+
   openSearchNav() {
     // .getElementById("mySearchnav").style.width = "450px";
+    this.searchIcon = true;
   }
   
   closeSearchNav() {
