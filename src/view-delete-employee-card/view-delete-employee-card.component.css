@@ -1,0 +1,26 @@
+.profile-employee {
+  padding: 5px;
+}
+.profile-photo {
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  padding: 14px;
+  border-radius: 60%;
+}
+
+.flex-container-50 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container-33 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.text-size-small {
+    font-size: 14px;
+}

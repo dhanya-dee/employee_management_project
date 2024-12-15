@@ -3,3 +3,7 @@
     justify-content: space-between;
     margin: 10px 6px 5px 10px;
 } 
+.flex-filters{
+    display: flex;
+    align-items: center;
+}

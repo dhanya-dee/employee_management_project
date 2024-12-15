@@ -1,7 +1,8 @@
 # EmployeeManagement
 Every employee hired to the company's files can be edited,viewed and deleted. Rendering of the application is using Github Pages.
 
-Tech stack used: Angular 2+, json-server (package) handles data (Hardcoded for now)
+**Tech stack used**: Angular 2+, json-server (package) handles data (Hardcoded for now)
+**Code Formatters**: ES Lint (extension), JSON Language Features, Prettier - Code formatter (extension)
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.5.
 

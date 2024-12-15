@@ -3,8 +3,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from '../header/header.component';
 import { SideNavComponent } from '../side-nav/side-nav.component';
 import { RouterOutlet } from '@angular/router';
-import { CardViewComponent } from '../card-view/card-view.component';
 import { PaginationComponent } from '../pagination/pagination.component';
+import { CommonModule } from '@angular/common';
+import { EmployeeCardsGridComponent } from '../employee-cards-grid/employee-cards-grid.component';
+import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
 
 @NgModule({
   exports: [
@@ -12,16 +14,20 @@ import { PaginationComponent } from '../pagination/pagination.component';
     HeaderComponent,
     SideNavComponent,
     PaginationComponent,
-    CardViewComponent
+    EmployeeCardsGridComponent,
   ],
   imports: [
     AppComponent,
     SideNavComponent,
     HeaderComponent,
-    CardViewComponent,
     PaginationComponent,
+    EmployeeCardsGridComponent,
+    CommonModule,
     RouterOutlet,
+    HttpClientModule
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

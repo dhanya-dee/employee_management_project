@@ -9,8 +9,12 @@ import { AppModule } from './app.module';
 })
 export class AppComponent {
   title = 'employee-management';
-
+  noOfRecords = 0;
+  
   constructor() {}
 
+  assigningRecords(eve: number): void{
+    this.noOfRecords = eve;
+  }
 
 }
