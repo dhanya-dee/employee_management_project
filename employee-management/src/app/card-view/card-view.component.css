@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-.my-dashboard{
-    margin: 40px 10px 0px 230px;
-    overflow-x: hidden;
-}
-
 .employee-view-display {
   margin: 0px -5px;
   flex-wrap: no-wrap;
@@ -31,8 +26,31 @@
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen and (min-width: 0px) {
   .employee-view-display {
     flex-wrap: wrap;
   }
+  .employee-card-view{
+    width: 50%;
+  }
 }
+
+@media only screen and (min-width: 992px){
+  .employee-view-display {
+    flex-wrap: wrap;
+  }
+  .employee-card-view{
+    width: 25%;
+  }
+}
+
+
+@media only screen and (min-width: 2000px){
+  .employee-view-display {
+    flex-wrap: wrap;
+  }
+  .employee-card-view{
+    width: 20%;
+  }
+}
+
