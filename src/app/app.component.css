@@ -1,12 +1,14 @@
 .my-dashboard{
     margin: 10px 10px 0px 230px;
     overflow-x: hidden;
+    position: relative;
 }
 .add-employee{
     display: flex;
     justify-content: flex-end;
     align-content: center;
     margin-right: 8px;
+    
 }
 .button-grey{
     border: 1px solid #cccccc;

@@ -2,7 +2,7 @@
     <div class="employee-view-display">
       <ng-template ngFor let-item [ngForOf]="empObject" let-i="index" class="employee-card-view" >
         <div class="employee-card">
-          <app-view-delete-employee-card [employeeDetails]="item"></app-view-delete-employee-card>
+          <app-view-delete-employee-card [employeeDetails]="item" [typeOfModal]="typeOfModal" [title]="title"></app-view-delete-employee-card>
         </div>
       </ng-template>
     </div>

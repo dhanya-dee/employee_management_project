@@ -1,0 +1,24 @@
+  .modals {
+    background-color: #fefefe;
+    padding: 1.25rem;
+    margin: 1.25rem auto;
+    border: .0625rem solid #888;
+    width: 60%;
+    height: 70%;
+    overflow-y: auto;
+  }
+  
+
+  .close {
+    color: #a0a0a0;
+    float: right;
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

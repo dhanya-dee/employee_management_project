@@ -1,20 +1,20 @@
 import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { Employee } from '../../services/employee';
-import { CommonModule } from '@angular/common';
 import { ProfilePhoto } from './enum-photo';
+import { ViewDeleteEmployeeCardModule } from './view-delete=employee-card.module';
 
 @Component({
   selector: 'app-view-delete-employee-card',
-  imports: [CommonModule],
+  imports: [ViewDeleteEmployeeCardModule],
   templateUrl: './view-delete-employee-card.component.html',
   styleUrl: './view-delete-employee-card.component.css'
 })
 export class ViewDeleteEmployeeCardComponent implements AfterViewInit {
   @Input() employeeDetails!: Employee;
+  @Input() typeOfModal!:number;
+  @Input() title!: string;
   @ViewChild('myDiv') myDiv!: ElementRef;
-
-  Element: any = ProfilePhoto.fox;
-  profilePhoto: string = '';
+  show = false;
 
   ngAfterViewInit() {
     switch(this.employeeDetails.icon){
@@ -35,5 +35,19 @@ export class ViewDeleteEmployeeCardComponent implements AfterViewInit {
           break;
         }
       }
+  }
+
+  openModal(type: string): void {
+    console.log(type);
+    if(type === 'edit'){
+      this.typeOfModal = 1;
+      this.title = 'Edit Employee';
+      this.show = true;
+    }
+    else if(type === 'delete'){
+      this.typeOfModal = 2;
+      this.title = 'Are you sure to delete this employee?';
+      this.show = false;
+    }
   }
 }
