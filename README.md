@@ -12,7 +12,8 @@ To run the backend: We use json-server: `https://www.npmjs.com/package/json-serv
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.5.
 
 #UI Interface:
-![image](https://github.com/user-attachments/assets/82c47fe9-b3fe-4f91-9b4f-5856a2bc1c15)
+![image](https://github.com/user-attachments/assets/a49e79aa-3121-4872-a1ec-3742d50b5438)
+
 
 
 
