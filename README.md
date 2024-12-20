@@ -4,7 +4,7 @@ Every employee hired to the company's files can be edited,viewed and deleted. Re
 **Tech stack used**: Angular 2+, json-server (package) handles data (Hardcoded for now)
 **Code Formatters**: ES Lint (extension), JSON Language Features, Prettier - Code formatter (extension)
 
-To run the backend: We use json-server: `https://www.npmjs.com/package/json-server` 
+To run the backend: We use json-server: https://www.npmjs.com/package/json-server 
 
  =>Step 1: npx json-server db.json ,inside the json folder in the project 
   =>Step 2: http://localhost:3000/currentEmployee or http://localhost:3000/displayEmployees is able to hit with a data on the browser and keep this terminal session runnning along with Angular ng serve in another terminal
